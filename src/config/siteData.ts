@@ -18,21 +18,21 @@ export const siteConfig = {
   ogImage: '/images/og-image.jpg',
 
   // ── Contact Details ──
-  phone: '+91 98XXX XXXXX', // Replace with actual phone
-  phoneClean: '9198XXXXXXXX', // For tel: links (no spaces/dashes)
-  email: 'info@aquline.in',
-  whatsapp: '919800000000', // WhatsApp number without + sign
+  phone: '+91 8708597282', // Replace with actual phone
+  phoneClean: '918708597282', // For tel: links (no spaces/dashes)
+  email: 'aquline950@gmail.com',
+  whatsapp: '918708597282', // WhatsApp number without + sign
   whatsappMessage: 'Hi AquLine! I would like to inquire about your packaged drinking water products.',
 
   // ── Address ──
   address: {
-    line1: 'AquLine Water Pvt. Ltd.',
+    line1: 'Clean Water Pvt. Ltd.',
     line2: 'Industrial Area, Phase-II',
     city: 'Rewari',
     state: 'Haryana',
     pin: '123401',
     country: 'India',
-    full: 'AquLine Water Pvt. Ltd., Industrial Area, Phase-II, Rewari, Haryana 123401',
+    full: 'Clean Water Pvt. Ltd., Industrial Area, Phase-II, Rewari, Haryana 123401',
     mapEmbedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.123!2d76.6194!3d28.1970!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRewari%2C+Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin',
   },
