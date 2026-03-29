@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/config/siteData';
+import { Analytics } from '@vercel/analytics/next'; // ← Analytics import
 
 // ── Google Font ──
 const inter = Inter({
@@ -12,6 +13,9 @@ const inter = Inter({
 
 // ── SEO Metadata ──
 export const metadata: Metadata = {
+  // This fixes the metadataBase warning
+  metadataBase: new URL(siteConfig.url),
+
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
@@ -69,7 +73,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className="font-sans antialiased overflow-x-hidden">{children}</body>
+      <body className="font-sans antialiased overflow-x-hidden">
+        {children}
+        <Analytics /> {/* ← Analytics component */}
+      </body>
     </html>
   );
 }
